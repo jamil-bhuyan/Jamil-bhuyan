@@ -1,3 +1,244 @@
 td{
     border-style: solid ;
 }
+```css
+/* ==============================
+   GENERAL PAGE
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #080808, #151515, #050505);
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   HEADINGS
+   ============================== */
+
+h1 {
+    color: #00eaff;
+    font-size: 38px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00eaff,
+                 0 0 25px rgba(0, 234, 255, 0.5);
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+
+/* ==============================
+   MAIN IMAGE
+   ============================== */
+
+body > img {
+    width: 220px;
+    max-width: 80%;
+    border-radius: 20px;
+    border: 3px solid #00eaff;
+    box-shadow: 0 0 15px rgba(0, 234, 255, 0.6);
+    transition: 0.3s ease;
+}
+
+body > img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 234, 255, 0.9);
+}
+
+
+/* ==============================
+   TEXT
+   ============================== */
+
+p {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+
+/* ==============================
+   SOCIAL MEDIA LINKS
+   ============================== */
+
+a {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 30px;
+
+    background: #111;
+    color: #00eaff;
+
+    border: 1px solid #00eaff;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+a:hover {
+    background: #00eaff;
+    color: #000;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 15px #00eaff,
+                0 0 30px rgba(0, 234, 255, 0.5);
+}
+
+
+/* ==============================
+   TABLE
+   ============================== */
+
+table {
+    width: 90%;
+    max-width: 700px;
+
+    margin: 30px auto;
+
+    border-collapse: collapse;
+
+    background: rgba(20, 20, 20, 0.9);
+
+    border: 1px solid #00eaff;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.2);
+}
+
+caption {
+    padding: 15px;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    color: #00eaff;
+}
+
+th,
+td {
+    padding: 15px;
+
+    border: 1px solid #333;
+
+    text-align: center;
+}
+
+th {
+    background: #00eaff;
+    color: #000;
+    font-size: 17px;
+}
+
+td {
+    color: #ddd;
+}
+
+tr:hover td {
+    background: #1c1c1c;
+}
+
+
+/* ==============================
+   FAN SECTION
+   ============================== */
+
+h1 + h2 {
+    margin-bottom: 15px;
+}
+
+
+/* Images inside fan sections */
+
+h2 + img,
+h1 + h2 + img {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 3px solid #ffcc00;
+
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+
+    transition: 0.3s ease;
+}
+
+h2 + img:hover,
+h1 + h2 + img:hover {
+    transform: scale(1.05) rotate(1deg);
+
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.8);
+}
+
+
+/* ==============================
+   SPECIAL FOOTER TEXT
+   ============================== */
+
+tfoot {
+    display: block;
+
+    margin: 25px auto 10px;
+
+    color: #aaa;
+
+    font-size: 16px;
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+   ============================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px 5px;
+    }
+
+    a {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+}
+```
